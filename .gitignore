@@ -1,0 +1,17 @@
+# Terraform State ファイル（サブスクリプション ID・リソース ID が含まれる）
+*.tfstate
+*.tfstate.*
+
+# Terraform プロバイダーキャッシュ（バイナリが大きいため除外）
+.terraform/
+
+# 変数実値ファイル（SSH 鍵パス・IP アドレスが含まれる）
+terraform.tfvars
+*.auto.tfvars
+
+# SSH 秘密鍵
+id_rsa
+
+# クラッシュログ
+crash.log
+crash.*.log
